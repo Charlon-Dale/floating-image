@@ -1,28 +1,42 @@
-.image-wrapper {
+body {
+    overflow-y: hidden
+}
+.image-wrapper{
     display: flex;
     justify-content:center;
     margin-top: 10rem;
 }
 
+h1 {
+    text-align: center;
+}
+
 .image-wrapper img{
     width: 400px;
-    
+    transition: 0.5s ease 50ms;
 }
 
 .image-wrapper .img-1{
-    height: 35rem;
+    height: 50rem;
+    position: relative;
+    top: -200px;
 
 }
 
 .image-wrapper .img-2{
-    height: 45rem;
+    height: 30rem;
     
 }
 
 .image-wrapper .img-3{
-    height: 35rem;
+    height: 30rem;
 }
 
 .image-wrapper .img-4{
-    height: 45rem;
+    height: 30rem;
 }
+
+.image-wrapper img:hover {
+    transform: scale(1.15);
+}
+
